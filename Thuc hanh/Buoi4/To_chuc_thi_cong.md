@@ -1,6 +1,6 @@
 # Có một dự án xây nhà với 10 công việc được cho như bảng sau:
 
-![img](myoctocat.com/assets/images/base-octocat.svg)
+![img](https://i.pinimg.com/564x/20/1a/71/201a71d9efcd860e01fde18c54a557d6.jpg)
 
 Xác định thời điểm sớm nhất và trể nhất để bắt đầu cho mỗi công việc mà không ảnh hưởng đến tiến độ của dự án
 Để đơn giản trong cài đặt, ta đánh số lại các công việc theo thứ tự 1, 2, 3 ...thay vì A, B, C....như sau:
@@ -40,7 +40,7 @@ t(u)-T(u)
 
 Chú ý đọc dữ liệu:
 
-![](https://else.ctu.edu.vn/pluginfile.php/29467/question/questiontext/82477/1/1298017/ReadFile.PNG)
+![](https://i.pinimg.com/564x/1f/30/58/1f30589c464b5ac5fb20d495e2fb4040.jpg)
 For example:
 ```
 Input	      Result
@@ -59,7 +59,6 @@ Input	      Result
             21-21
 ```
 ```
-//code
 #include <stdio.h>
 #include <stdbool.h>
 #define maxv 50
@@ -67,42 +66,39 @@ Input	      Result
 #define oo 9999999
 typedef int Vertices;
 
-//Khai báo cấu trúc đồ thị
 typedef struct{
     int matrix[maxv][maxv];
-    Vertices n;//Đỉnh n
+    Vertices n;
 }Graph;
 
-//Khai báo cấu trúc danh sách
 typedef struct{
     int data[idx];
     int size;
 }List;
 
-/*Các hàm trên danh sách*/
 
-//Làm rỗng 
+
+
 void makenullList(List *l){
     l->size=0;
 }
 
-//Kiểm tra danh sách có rỗng hay không
 bool emptyList(List *l){
     return (l->size==0);
 }
 
-//Thêm một phần tử vào danh sách
+
 void pushList(List *l, int element){
     l->data[l->size] = element;
     l->size++;
 }
 
-//Truy cập một phần tử trong danh sách bắt đầu từ vị trí thứ 1
+
 int getList(List *l, int index){
     return l->data[index-1];
 }
 
-/*Các hàm thao tác trên đồ thị*/
+
 void initGraph(Graph *g, int n){
     g->n=n;
     for(int i=1;i<=n;i++)
@@ -110,17 +106,17 @@ void initGraph(Graph *g, int n){
             g->matrix[i][j]=0;
 }
 
-//Thêm cung e = (x,y) vào đồ thị có hướng
+
 void addEdge(Graph *g, int x, int y){
     g->matrix[x][y]=1;
 }
 
-//Kiểm tra hai đỉnh có kề nhau hay không
+
 bool adjacent(Graph *g, int x, int y){
     return g->matrix[x][y]==1;
 }
 
-//Tính số bậc vào của 1 đỉnh trong đồ thị - bậc vào là bậc có mũi tên đi vào đỉnh
+
 int degreeInput(Graph *g, int x){
     int count=0;
     for(int i=1;i<=g->n;i++){
@@ -131,7 +127,7 @@ int degreeInput(Graph *g, int x){
     return count;
 }
 
-//Tính số bậc ra của 1 đỉnh trong đồ thị - Bậc ra là số mũi tên đi ra của đỉnh đang xét đến một đỉnh khác
+
 int degreeOutput(Graph *g, int x){
     int count=0;
     for(int i=1;i<=g->n;i++){
@@ -142,7 +138,7 @@ int degreeOutput(Graph *g, int x){
     return count;
 }
 
-//Tìm đỉnh láng giềng của một đỉnh
+
 List neighbors(Graph *g, int x){
     List L;
     makenullList(&L);
@@ -154,7 +150,7 @@ List neighbors(Graph *g, int x){
     return L;
 }
 
-//Sao chép phần tử của danh sách này sang danh sách khác
+
 void copyList(List *l1, List *l2){
     makenullList(l1);
     for(int i=1;i<=l2->size;i++){
@@ -199,12 +195,12 @@ List topoSort(Graph *g){
     }
     return toposort;
 }
-//Hàm tìm min
+
 int min(int a, int b){
     return (a<b)?a:b;
 }
 
-//Hàm tìm max
+
 int max(int a, int b){
     return (a>b)?a:b;
 }
@@ -276,4 +272,5 @@ int main(){
         
     return 0;
 }
+
 ```
