@@ -1,4 +1,4 @@
-//code
+
 #include <stdio.h>
 #include <stdbool.h>
 #define maxv 50
