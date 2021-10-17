@@ -1,5 +1,6 @@
 # Có một dự án xây nhà với 10 công việc được cho như bảng sau:
-![dsd](https://www.google.com/url?sa=i&url=https%3A%2F%2Flinhfishcr7.wordpress.com%2F2020%2F07%2F15%2F6-bai-thuc-hanh-buoi-4%2F&psig=AOvVaw1fmoG8kdbpOez_25QL2RkE&ust=1634567433873000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPD-os_U0fMCFQAAAAAdAAAAABAD)
+
+![img](myoctocat.com/assets/images/base-octocat.svg)
 
 Xác định thời điểm sớm nhất và trể nhất để bắt đầu cho mỗi công việc mà không ảnh hưởng đến tiến độ của dự án
 Để đơn giản trong cài đặt, ta đánh số lại các công việc theo thứ tự 1, 2, 3 ...thay vì A, B, C....như sau:
