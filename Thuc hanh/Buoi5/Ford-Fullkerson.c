@@ -12,6 +12,7 @@ void init_graph(Graph *G, int n)
 {
     G->n = n;
 }
+
 typedef struct
 {
     int dir;
